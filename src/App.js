@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider } from '@mui/material';
 import { responsiveFontSizes } from '@mui/material/styles';
 import { Navbar } from './components/Navbar';
+import { Home } from './pages/Home';
 
 const theme = createTheme({
   typography: {
@@ -20,11 +21,10 @@ const theme = createTheme({
 });
 
 const responsiveTheme = responsiveFontSizes(theme);
-
 function App() {
   return (
     <ThemeProvider theme={responsiveTheme}>
-      <Navbar />
+      <Home />
     </ThemeProvider>
   );
 }
