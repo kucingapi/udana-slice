@@ -83,7 +83,7 @@ export const BreweriesData = () => {
 			.catch((err)=>{
 				console.log(err);
 			})
-	},[])
+	})
 
 	return(
 		<DataTable rows={data}/>
