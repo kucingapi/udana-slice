@@ -1,5 +1,5 @@
 import { AppBar, Toolbar, Link, Button, Stack } from "@mui/material"
-import { makeStyles, styled } from "@mui/styles";
+import { makeStyles } from "@mui/styles";
 import Logo from "../assets/Logo.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -10,35 +10,55 @@ const useStyles = makeStyles((theme) => ({
 		fontWeight:900,
 	},
 }));
+
+const InvisibleButton = (props) => {
+	return(
+		<Button sx={{
+			color:"white",
+			textTransform:'none',
+			fontWeight:'900'
+		}}>
+			{props.children}
+		</Button>
+	)
+}
+
 export const Navbar = () =>{
 	const classes = useStyles();
 	return (
 		<AppBar sx={{
 			background: 'transparent',
 			boxShadow:'none',
+			position:'relative'
 		}}>
 			<Toolbar>
-
 				<Stack direction="row" spacing={2}>
 					<Link href="https://udana.id/">
 						<img className={classes.logo} src={Logo} alt="logo"/>
 					</Link>
 					<Link>
-						<Button sx={{color:"white",textTransform:'none',fontWeight:'900'}}>Wiralaba</Button>
+						<InvisibleButton>Wiralaba</InvisibleButton>
 					</Link>
 					<Link>
-						<Button sx={{color:"white",textTransform:'none',fontWeight:'900'}}>FAQ</Button>
+						<InvisibleButton>FAQ</InvisibleButton>
 					</Link>
 					<Link>
-						<Button sx={{color:"white",textTransform:'none',fontWeight:'900'}}>Tentang</Button>
+						<InvisibleButton>Tentang</InvisibleButton>
 					</Link>
 				</Stack>
 				<Stack sx={{ml:"auto"}} direction="row" spacing={2}>
 					<Link>
-						<Button sx={{color:"white",textTransform:'none',fontWeight:'900'}}>Masuk</Button>
+						<InvisibleButton>Masuk</InvisibleButton>
 					</Link>
 					<Link>
-						<Button variant="contained" sx={{textTransform:'none',fontWeight:'900'}}>Mulai Daftar</Button>
+						<Button 
+							variant="contained" 
+							sx={{
+								textTransform:'none',
+								fontWeight:'900'
+							}}>
+							Mulai Daftar
+						</Button>
 					</Link>
 				</Stack>
 			</Toolbar>

@@ -1,6 +1,5 @@
 import { createTheme, ThemeProvider } from '@mui/material';
 import { responsiveFontSizes } from '@mui/material/styles';
-import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 
 const theme = createTheme({
@@ -15,7 +14,7 @@ const theme = createTheme({
     },
     secondary: {
       main: '#ff9100',
-      contrastText: '#ffffff',
+      contrastText: '#000000',
     },
   },
 });
