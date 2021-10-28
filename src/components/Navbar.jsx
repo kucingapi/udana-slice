@@ -1,5 +1,6 @@
 import { AppBar, Toolbar, Link, Button, Stack } from "@mui/material"
 import { makeStyles } from "@mui/styles";
+import { styled } from "@mui/system";
 import Logo from "../assets/Logo.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -11,17 +12,11 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const InvisibleButton = (props) => {
-	return(
-		<Button sx={{
-			color:"white",
-			textTransform:'none',
-			fontWeight:'900'
-		}}>
-			{props.children}
-		</Button>
-	)
-}
+const InvisibleButton = styled(Button)({
+	color:"white",
+	textTransform:'none',
+	fontWeight:'900'
+})
 
 export const Navbar = () =>{
 	const classes = useStyles();
