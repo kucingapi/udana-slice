@@ -23,7 +23,7 @@ export const WelcomeSection = () =>{
 		<>
 			<Box className={classes.introImage}>
 				<Navbar />
-				<Grid p={10}container>
+				<Grid p={10} container>
 					<Grid item md={5} sm={12}>
 						<Stack spacing={3}>
 							<Typography 

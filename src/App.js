@@ -5,6 +5,9 @@ import { Home } from './pages/Home';
 const theme = createTheme({
   typography: {
     fontFamily: 'Poppins, Arial',
+    h3: {
+      fontSize: '2.7rem',
+    },
   },
   palette: {
     type: 'light',
@@ -14,7 +17,7 @@ const theme = createTheme({
     },
     secondary: {
       main: '#ff9100',
-      contrastText: '#000000',
+      contrastText: '#a3a3a3',
     },
   },
 });
