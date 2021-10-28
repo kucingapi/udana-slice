@@ -2,6 +2,8 @@ import { AppBar, Toolbar, Link, Button, Stack } from "@mui/material"
 import { makeStyles } from "@mui/styles";
 import { styled } from "@mui/system";
 import Logo from "../assets/Logo.png";
+import { Link as RouterLink} from "react-router-dom"
+
 
 const useStyles = makeStyles((theme) => ({
 	logo:{
@@ -40,6 +42,9 @@ export const Navbar = () =>{
 					<Link>
 						<InvisibleButton>Tentang</InvisibleButton>
 					</Link>
+					<RouterLink to='/data'>
+						<InvisibleButton>Tabel</InvisibleButton>
+					</RouterLink>
 				</Stack>
 				<Stack sx={{ml:"auto"}} direction="row" spacing={2}>
 					<Link>

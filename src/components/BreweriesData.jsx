@@ -2,7 +2,6 @@ import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow
 import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
-
 export const Get = (url) => {
     const promise = new Promise((resolve, reject) => {
         axios.get(url)
