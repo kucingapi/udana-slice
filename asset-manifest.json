@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/udana-slice/static/js/main.b00b6323.chunk.js",
+    "main.js.map": "/udana-slice/static/js/main.b00b6323.chunk.js.map",
+    "runtime-main.js": "/udana-slice/static/js/runtime-main.93ce29b5.js",
+    "runtime-main.js.map": "/udana-slice/static/js/runtime-main.93ce29b5.js.map",
+    "static/js/2.0f5a94ad.chunk.js": "/udana-slice/static/js/2.0f5a94ad.chunk.js",
+    "static/js/2.0f5a94ad.chunk.js.map": "/udana-slice/static/js/2.0f5a94ad.chunk.js.map",
+    "static/js/3.29e369f6.chunk.js": "/udana-slice/static/js/3.29e369f6.chunk.js",
+    "static/js/3.29e369f6.chunk.js.map": "/udana-slice/static/js/3.29e369f6.chunk.js.map",
+    "index.html": "/udana-slice/index.html",
+    "static/js/2.0f5a94ad.chunk.js.LICENSE.txt": "/udana-slice/static/js/2.0f5a94ad.chunk.js.LICENSE.txt",
+    "static/media/background_border.5e48b863.svg": "/udana-slice/static/media/background_border.5e48b863.svg",
+    "static/media/background_main.8d4b423d.jpg": "/udana-slice/static/media/background_main.8d4b423d.jpg",
+    "static/media/pilih_umkm.68a04e3d.png": "/udana-slice/static/media/pilih_umkm.68a04e3d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93ce29b5.js",
+    "static/js/2.0f5a94ad.chunk.js",
+    "static/js/main.b00b6323.chunk.js"
+  ]
+}
