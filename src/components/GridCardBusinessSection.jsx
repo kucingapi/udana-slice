@@ -1,6 +1,6 @@
-import { Box, Card, Typography, Grid, CardHeader, CardContent, CardMedia, CardActions, Button } from "@mui/material"
+import { Box, Card, Typography, Grid, CardHeader, CardContent, CardMedia, CardActions, Button, Link } from "@mui/material"
 
-const CardBusiness = (props) => {
+const CardBusiness = () => {
 	return(
 		<Card sx={{boxShadow:2}}>
 			<CardHeader
@@ -87,6 +87,10 @@ export const GridCardBusinessSection = () => {
 					<CardBusiness/>
 				</Grid>
 			</Grid>
+			<Link href='https://udana.id/waralaba'>
+				<Typography textAlign='center' sx={{fontWeight:'900'}} variant="h5" color="primary">Lihat Semua</Typography>
+			</Link>
+
 		</>
 	)
 }
