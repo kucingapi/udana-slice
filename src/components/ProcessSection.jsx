@@ -14,7 +14,7 @@ export const ProcessSection = () =>{
 	return(
 		<Box mt={15}>
 			<Grid p={3} container sx={{maxWidth:"100%"}}>
-				<Grid md={5}>
+				<Grid item md={5}>
 					<Typography 
 						variant="h3" 
 						color="initial"
@@ -23,7 +23,7 @@ export const ProcessSection = () =>{
 						Menjadi Investor UMKM itu gampang
 					</Typography>
 				</Grid>
-				<Grid md={4} px={5}>
+				<Grid item md={4} px={5}>
 					<Typography 
 						variant="h6" 
 						color="secondary.contrastText"
@@ -32,8 +32,8 @@ export const ProcessSection = () =>{
 					</Typography>
 				</Grid>
 			</Grid>
-			<Grid p={3} container>
-				<Grid md={4}>
+			<Grid p={3} spacing={10}container>
+				<Grid item md={4}>
 					<Stack spacing={2}>
 						<Box>
 							<img src={Picture} className={classes.image} alt="" />
@@ -53,7 +53,7 @@ export const ProcessSection = () =>{
 						</Typography>
 					</Stack>
 				</Grid>
-				<Grid md={4}>
+				<Grid item md={4}>
 					<Stack spacing={2}>
 						<Box>
 							<img src={Picture} className={classes.image} alt="" />
@@ -73,7 +73,7 @@ export const ProcessSection = () =>{
 						</Typography>
 					</Stack>
 				</Grid>
-				<Grid md={4}>
+				<Grid item md={4}>
 					<Stack spacing={2}>
 						<Box>
 							<img src={Picture} className={classes.image} alt="" />
